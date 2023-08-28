@@ -1,2 +1,601 @@
-Hello World
-change v2.0
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>3D-Speaker-Datasets</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/3D-Speaker-icon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="hero-content">
+        <header class="site-header">
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="index.html" rel="home">3<span>D</span>-SPEAKER</a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="#Dataset">Dataset</a></li>
+                                    <li><a href="#Publication">Publication</a></li>
+                                    <li><a href="#Download">Download</a></li>
+                                    <li><a href="#LeaderBoard">LeaderBoard</a></li>
+                                    <!-- <li><a href="#">ACKNOWLEDGEMENTS</a></li> -->
+                                </ul>
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="hero-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h1>3D-Speaker <br /> Datasets</h1>
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content" style="color: #19c880;">
+                                <h5>A large scale <b>multi-Device</b>, <b>multi-Distance</b>, and <b>multi-Dialect</b>
+                                    audio dataset of human speech
+                                </h5>
+                            </div>
+                        </div><!-- .hero-content-wrap -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+    </div><!-- .hero-content -->
+
+    <div class="icon-boxes">
+        <div class="container-fluid">
+            <div class="flex flex-wrap align-items-stretch">
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-user"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">10000+ Speakers</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>3D-Speaker Datasets contains <b>10000+ speakers</b>.
+                        </p>
+                    </div><!-- .entry-content -->
+                </div><!-- .icon-box -->
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-headphone-alt"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">Multiple Devices</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>Device labels of <b>all utterances</b> are provided. Devices include phones,
+                            recording pens, PC laptops, microphone arrays, etc.
+                        </p>
+                    </div><!-- .entry-content -->
+                </div><!-- .icon-box -->
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-ruler-alt-2"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">Multiple Distances</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>The distance from sound source to recording devices have been tracked and provided. Distances
+                            range <b>from 0.1m to
+                                4m</b>, covering most common scenarios.</p>
+                    </div><!-- .entry-content -->
+                </div><!-- .icon-box -->
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-world"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">Multiple Dialects</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>3D-Speaker-Datasets covers data of <b>14</b> different Mandarin
+                            dialects.</p>
+                    </div><!-- .entry-content -->
+                </div><!-- .icon-box -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .icon-boxes -->
+
+
+    <section class="featured-courses vertical-column courses-wrap" id="Dataset">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">Dataset Features</h2>
+                    </header><!-- .heading -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-4 px-25">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <img src="images/multi-device.png" alt="">
+                        </figure>
+
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title">Distribution of devices</h2>
+
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-author">We provide the device information for each utterance
+                                        including PC, Recording Pen, Array, Phone and IPad.</div>
+                                </div>
+                            </header><!-- .entry-header -->
+                        </div>
+                    </div>
+                </div><!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-4 px-25">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <img src="images/multi-dialect.png" alt="">
+                        </figure>
+
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title">Distribution of dialects</h2>
+
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-author">The datasets contains 14 dialects, covering
+                                        most major dialects spoken in China.</div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                </div><!-- .col -->
+
+                <div class="col-12 col-md-6 col-lg-4 px-25">
+                    <div class="course-content">
+                        <figure class="course-thumbnail">
+                            <img src="images/multi-distance.png" alt="">
+                        </figure>
+
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title">Distribution of distances</h2>
+
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-author">We define distances less than 0.8m as near-field and
+                                        others as far-field.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-courses horizontal-column courses-wrap" id="Publication">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">Publication</h2>
+                    </header>
+                    <p class="lead font-weight-normal text-muted">Please cite the following if you make use of the
+                        dataset.</p>
+                </div>
+                <div class="col-12 px-25">
+                    <p class="lead font-weight-normal"><a href="https://arxiv.org/pdf/2306.15354.pdf">Zheng, S., Cheng,
+                            L., Chen, Y., Wang, H., & Chen, Q.
+                            (2023). 3D-Speaker: A Large-Scale Multi-Device, Multi-Distance, and Multi-Dialect Corpus for
+                            Speech Representation Disentanglement. arXiv preprint arXiv:2306.15354.</a></p>
+                    <div class="border p-3">
+                        <pre><code id="bibtex" class="bg-light">@misc{zheng20233dspeaker,
+    title={3D-Speaker: A Large-Scale Multi-Device, Multi-Distance, and Multi-Dialect Corpus for Speech Representation Disentanglement}, 
+    author={Siqi Zheng and Luyao Cheng and Yafeng Chen and Hui Wang and Qian Chen},
+    year={2023},
+    eprint={2306.15354},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-courses vertical-column courses-wrap" id="Download">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">Download </h2>
+                    </header><!-- .heading -->
+
+                    <p></p>
+                    <h4>License</h4>
+                    <p class="lead font-weight-normal"> The provided 3D-Speaker metadata is available to download under a 
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+                            class="text-primary font-weight-bold">Creative Commons Attribution-ShareAlike 4.0 International License(CC BY-SA 4.0)</a>.
+                    </p>
+                    <p></p>
+
+                    <p></p>
+                    <h4>Links</h4>
+                    <p class="lead font-weight-normal">Here is the <a
+                            href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/train.tar.gz"
+                            class="text-info font-weight-bold">train
+                            dataset</a> (~190G) of 3D-Speaker-Datasets.
+                        <span class="text-muted small"> md5: c2cea55fd22a2b867d295fb35a2d3340 </span> <br />
+                    </p>
+                    <p class="lead font-weight-normal">Here is the <a
+                            href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/test.tar.gz"
+                            class="text-info font-weight-bold">test
+                            dataset</a> (~1.1G) of 3D-Speaker-Datasets.
+                        <span class="text-muted small"> md5: 45972606dd10d3f7c1c31f27acdfbed7 </span>
+                    </p>
+                    <p class="lead font-weight-normal">We also provide the
+                        <a href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/transcription.tar.gz"
+                            class="text-info font-weight-bold">transcription
+                            text</a> for both train and test dataset.
+                    </p>
+                    <p class="lead font-weight-normal">Here are some text files:
+                        <a href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/trials/trials_cross_device"
+                            class="text-info font-weight-bold">Cross-Device Trials</a>,
+                        <a href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/trials/trials_cross_distance"
+                            class="text-info font-weight-bold">Cross-Distance Trials</a>,
+                        <a href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/trials/trials_cross_dialect"
+                            class="text-info font-weight-bold">Cross-Dialect Trials</a>
+                        and
+                        <a href="https://speech-lab-share-data.oss-cn-shanghai.aliyuncs.com/3D-Speaker/3dspeaker_files.tar.gz"
+                            class="text-info font-weight-bold">Utterance informations</a>.
+                    </p>
+                    <p class="lead font-weight-normal">You can also find more details and codes in our <a
+                            href="https://github.com/alibaba-damo-academy/3D-Speaker" class="text-info">Github</a>
+                        project.</p>
+                </div><!-- .col -->
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-courses horizontal-column courses-wrap" id="LeaderBoard">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">Leaderboard</h2>
+                    </header>
+                    <p></p>
+                    <p class="lead font-weight-normal">The following table displays the state-of-the-art results on
+                        3D-Speaker-Datasets.</p>
+                    <p class="lead font-weight-normal">If you would like your results to be listed on the leaderboard,
+                        please send the link of paper, EER and min-DCF(p_target=0.01, c_miss=1, c_fa=1), number of
+                        parameters, and code implementation(if available) to <a
+                            href="mailto:3D_Speaker_Public@aliyun.com" class="text-info">here</a>.</p>
+
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># Trials Cross Device</h4>
+                    </header>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center align-middle">Model</th>
+                                    <th class="text-center align-middle">Publications</th>
+                                    <th class="text-center align-middle"># Params</th>
+                                    <th class="text-center align-middle">Code</th>
+                                    <th class="text-center align-middle">EER(%)</th>
+                                    <th class="text-center align-middle">Min-DCF</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center align-middle">
+                                <tr>
+                                    <td>ERes2Net-Large</td>
+                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf"> Chen et al. 23'</a></td>
+                                    <td>18.3M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>6.55</td>
+                                    <td>0.640</td>
+                                </tr>
+                                <tr>
+                                    <td>ERes2Net-Base</td>
+                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
+                                    <td>4.6M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>7.06</td>
+                                    <td>0.656</td>
+                                </tr>
+                                <tr>
+                                    <td>CAM++</td>
+                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
+                                    <td>7.2M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>7.8</td>
+                                    <td>0.723</td>
+                                </tr>
+                                <tr>
+                                    <td>ECAPA-TDNN</td>
+                                    <td><a href="https://arxiv.org/pdf/2005.07143.pdf">Desplanques et al. 20'</a></td>
+                                    <td>20.8M</td>
+                                    <td><a href="https://github.com/speechbrain/speechbrain" class="text-info">Code
+                                            Implementation</a></td>
+                                    <td>8.87</td>
+                                    <td>0.732</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># Trials Cross Distance</h4>
+                    </header>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center align-middle">Model</th>
+                                    <th class="text-center align-middle">Publications</th>
+                                    <th class="text-center align-middle"># Params</th>
+                                    <th class="text-center align-middle">Code</th>
+                                    <th class="text-center align-middle">EER(%)</th>
+                                    <th class="text-center align-middle">Min-DCF</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center align-middle">
+                                <tr>
+                                    <td>ERes2Net-Large</td>
+                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
+                                    <td>18.3M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>9.45</td>
+                                    <td>0.713</td>
+                                </tr>
+                                <tr>
+                                    <td>ERes2Net-Base</td>
+                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
+                                    <td>4.6M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>9.95</td>
+                                    <td>0.753</td>
+                                </tr>
+                                <tr>
+                                    <td>CAM++</td>
+                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
+                                    <td>7.2M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>11.3</td>
+                                    <td>0.783</td>
+                                </tr>
+                                <tr>
+                                    <td>ECAPA-TDNN</td>
+                                    <td><a href="https://arxiv.org/pdf/2005.07143.pdf">Desplanques et al. 20'</a></td>
+                                    <td>20.8M</td>
+                                    <td><a href="https://github.com/speechbrain/speechbrain" class="text-info">Code
+                                            Implementation</a></td>
+                                    <td>12.26</td>
+                                    <td>0.805</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># Trials Cross Dialect</h4>
+                    </header>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center align-middle">Model</th>
+                                    <th class="text-center align-middle">Publications</th>
+                                    <th class="text-center align-middle"># Params</th>
+                                    <th class="text-center align-middle">Code</th>
+                                    <th class="text-center align-middle">EER(%)</th>
+                                    <th class="text-center align-middle">Min-DCF</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center align-middle">
+                                <tr>
+                                    <td>ERes2Net-Large</td>
+                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
+                                    <td>18.3M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>11.01</td>
+                                    <td>0.811</td>
+                                </tr>
+                                <tr>
+                                    <td>ERes2Net-Base</td>
+                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
+                                    <td>4.6M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>12.76</td>
+                                    <td>0.871</td>
+                                </tr>
+                                <tr>
+                                    <td>CAM++</td>
+                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
+                                    <td>7.2M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>13.4</td>
+                                    <td>0.886</td>
+                                </tr>
+                                <tr>
+                                    <td>ECAPA-TDNN</td>
+                                    <td><a href="https://arxiv.org/pdf/2005.07143.pdf">Desplanques et al. 20'</a></td>
+                                    <td>20.8M</td>
+                                    <td><a href="https://github.com/speechbrain/speechbrain" class="text-info">Code
+                                            Implementation</a></td>
+                                    <td>14.52</td>
+                                    <td>0.913</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># Self-Supervised Models</h4>
+                    </header>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center align-middle" , rowspan="2">Models</th>
+                                    <th class="text-center align-middle" , rowspan="2">Publications</th>
+                                    <th class="text-center align-middle" , rowspan="2"># Params</th>
+                                    <th class="text-center align-middle" , rowspan="2">Code</th>
+                                    <th class="text-center align-middle" , colspan="2">trial cross device</th>
+                                    <th class="text-center align-middle" , colspan="2">trial cross distance</th>
+                                    <th class="text-center align-middle" , colspan="2">trial cross dialect</th>
+                                </tr>
+                                <tr>
+                                    <th class="text-center align-middle">EER(%)</th>
+                                    <th class="text-center align-middle">Min-DCF</th>
+                                    <th class="text-center align-middle">EER(%)</th>
+                                    <th class="text-center align-middle">Min-DCF</th>
+                                    <th class="text-center align-middle">EER(%)</th>
+                                    <th class="text-center align-middle">Min-DCF</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center align-middle">
+                                <tr>
+                                    <td>RDINO</td>
+                                    <td><a href="https://arxiv.org/pdf/2211.04168.pdf">Chen et al. 22'</a></td>
+                                    <td>45.44M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>20.4</td>
+                                    <td>0.972</td>
+                                    <td>21.9</td>
+                                    <td>0.966</td>
+                                    <td>25.5</td>
+                                    <td>0.999</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># Language Identification</h4>
+                    </header>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center align-middle">Model</th>
+                                    <th class="text-center align-middle">Publications</th>
+                                    <th class="text-center align-middle"># Params</th>
+                                    <th class="text-center align-middle">Code</th>
+                                    <th class="text-center align-middle">Accuracy(%)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center align-middle">
+                                <tr>
+                                    <td>CAM++</td>
+                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
+                                    <td>7.2M</td>
+                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
+                                            class="text-info">Code Implementation</a></td>
+                                    <td>29.36</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <p class="footer-copyright">
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <ul class="flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            Template from &nbsp; <a href="https://github.com/technext/ezuca"> Ezuca </a> &nbsp; adapted
+                            by
+                            LuyaoCheng
+                        </ul>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
