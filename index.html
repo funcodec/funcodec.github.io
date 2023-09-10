@@ -97,11 +97,11 @@
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title">Distribution of devices</h2>
+                                <h2 class="entry-title">Abundance of slides in videos</h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author">We provide the device information for each utterance
-                                        including PC, Recording Pen, Array, Phone and IPad.</div>
+                                    <div class="course-author">These can be used for text-enhanced 
+                                        multi-modal ASR to correct the wrong recognized proprietary terms.</div>
                                 </div>
                             </header><!-- .entry-header -->
                         </div>
@@ -116,11 +116,11 @@
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title">Distribution of dialects</h2>
+                                <h2 class="entry-title">Sizeable</h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author">The datasets contains 14 dialects, covering
-                                        most major dialects spoken in China.</div>
+                                    <div class="course-author">1,705 videos with a total duration of 1,000+ hours, 
+                                        and 473 hours of transcribed speech.</div>
                                 </div>
                             </header>
                         </div>
@@ -135,11 +135,10 @@
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title">Distribution of distances</h2>
+                                <h2 class="entry-title">Diverse</h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author">We define distances less than 0.8m as near-field and
-                                        others as far-field.
+                                    <div class="course-author">Adiverse range of domain categories, with 22 classes. <br/>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     </div>
                                 </div>
@@ -257,39 +256,57 @@
                         <h2 class="entry-title">Leaderboard</h2>
                     </header>
                     <p></p>
-                    <p class="lead font-weight-normal">The following table displays the state-of-the-art results on
-                        3D-Speaker-Datasets.</p>
-                    <p class="lead font-weight-normal">If you would like your results to be listed on the leaderboard,
+                    <p class="lead font-weight-normal">Performance of the baseline model and the contextual asr benchmark on
+                        SlideSpeech Corpus.</p>
+                    <p class="lead font-weight-normal">w/o K represents the without Keyword, w K represents the with Keyword. 
+                        OCR, R1, Keyword means the performance is calculated according to the OCR, R1, Keyword bias list.
+                         U/B/R refers to the U-WER/B-WER/Recall. The unit of recall rate is percentage (%).</p>
+                    <!-- <p class="lead font-weight-normal">If you would like your results to be listed on the leaderboard,
                         please send the link of paper, EER and min-DCF(p_target=0.01, c_miss=1, c_fa=1), number of
                         parameters, and code implementation(if available) to <a
-                            href="mailto:3D_Speaker_Public@aliyun.com" class="text-info">here</a>.</p>
+                            href="mailto:3D_Speaker_Public@aliyun.com" class="text-info">here</a>.</p> -->
 
                     <header class="heading flex flex-wrap justify-content-between align-items-center">
-                        <h4># Trials Cross Device</h4>
+                        <h4># The performance of the models trained on S95 and tested on Dev set</h4>
                     </header>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
                             <thead>
                                 <tr>
                                     <th class="text-center align-middle">Model</th>
-                                    <th class="text-center align-middle">Publications</th>
-                                    <th class="text-center align-middle"># Params</th>
-                                    <th class="text-center align-middle">Code</th>
-                                    <th class="text-center align-middle">EER(%)</th>
-                                    <th class="text-center align-middle">Min-DCF</th>
+                                    <th class="text-center align-middle">Set</th>
+                                    <th class="text-center align-middle">WER</th>
+                                    <th class="text-center align-middle">OCR(U/B/R)</th>
+                                    <th class="text-center align-middle">R1(U/B/R)</th>
+                                    <th class="text-center align-middle">Keyword(U/B/R)</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center align-middle">
                                 <tr>
-                                    <td>ERes2Net-Large</td>
-                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf"> Chen et al. 23'</a></td>
-                                    <td>18.3M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>6.55</td>
-                                    <td>0.640</td>
+                                    <td>Baseline CTC/AED</td>
+                                    <td>S95</td>
+                                    <td>22.07</td>
+                                    <td>22.67/19.60/82.04</td>
+                                    <td>19.74/100/0.00</td>
+                                    <td>21.33/31.95/68.08</td>
                                 </tr>
                                 <tr>
+                                    <td>Contextualized CTC/AED w/o K</td>
+                                    <td>S95</td>
+                                    <td>21.50</td>
+                                    <td>22.35/17.99/83.75</td>
+                                    <td>20.17/83.85/16.30</td>
+                                    <td>21.19/33.05/67.04</td>
+                                </tr>
+                                <tr>
+                                    <td>Contextualized CTC/AED w K</td>
+                                    <td>S95</td>
+                                    <td>22.01</td>
+                                    <td>22.43/20.29/81.38</td>
+                                    <td>19.91/74.74/25.62</td>
+                                    <td>21.10/26.84/73.32</td>
+                                </tr>
+                                <!-- <tr>
                                     <td>ERes2Net-Base</td>
                                     <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
                                     <td>4.6M</td>
@@ -315,126 +332,148 @@
                                             Implementation</a></td>
                                     <td>8.87</td>
                                     <td>0.732</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
 
                     <header class="heading flex flex-wrap justify-content-between align-items-center">
-                        <h4># Trials Cross Distance</h4>
+                        <h4># The performance of the models trained on S95 and tested on Test set</h4>
                     </header>
-
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
                             <thead>
                                 <tr>
                                     <th class="text-center align-middle">Model</th>
-                                    <th class="text-center align-middle">Publications</th>
-                                    <th class="text-center align-middle"># Params</th>
-                                    <th class="text-center align-middle">Code</th>
-                                    <th class="text-center align-middle">EER(%)</th>
-                                    <th class="text-center align-middle">Min-DCF</th>
+                                    <th class="text-center align-middle">Set</th>
+                                    <th class="text-center align-middle">WER</th>
+                                    <th class="text-center align-middle">OCR(U/B/R)</th>
+                                    <th class="text-center align-middle">R1(U/B/R)</th>
+                                    <th class="text-center align-middle">Keyword(U/B/R)</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center align-middle">
                                 <tr>
-                                    <td>ERes2Net-Large</td>
-                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
-                                    <td>18.3M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>9.45</td>
-                                    <td>0.713</td>
+                                    <td>Baseline CTC/AED</td>
+                                    <td>S95</td>
+                                    <td>22.59</td>
+                                    <td>23.45/19.04/82.65</td>
+                                    <td>20.46/100/0.00</td>
+                                    <td>22.23/27.57/72.61</td>
                                 </tr>
                                 <tr>
-                                    <td>ERes2Net-Base</td>
-                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
-                                    <td>4.6M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>9.95</td>
-                                    <td>0.753</td>
+                                    <td>Contextualized CTC/AED w/o K</td>
+                                    <td>S95</td>
+                                    <td>22.42</td>
+                                    <td>23.23/19.09/82.48</td>
+                                    <td>20.81/80.83/19.89</td>
+                                    <td>21.98/28.50/71.66</td>
                                 </tr>
                                 <tr>
-                                    <td>CAM++</td>
-                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
-                                    <td>7.2M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>11.3</td>
-                                    <td>0.783</td>
-                                </tr>
-                                <tr>
-                                    <td>ECAPA-TDNN</td>
-                                    <td><a href="https://arxiv.org/pdf/2005.07143.pdf">Desplanques et al. 20'</a></td>
-                                    <td>20.8M</td>
-                                    <td><a href="https://github.com/speechbrain/speechbrain" class="text-info">Code
-                                            Implementation</a></td>
-                                    <td>12.26</td>
-                                    <td>0.805</td>
+                                    <td>Contextualized CTC/AED w K</td>
+                                    <td>S95</td>
+                                    <td>21.93</td>
+                                    <td>23.18/16.80/84.75</td>
+                                    <td>20.56/71.63/29.14</td>
+                                    <td>21.92/21.98/78.23</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <header class="heading flex flex-wrap justify-content-between align-items-center">
-                        <h4># Trials Cross Dialect</h4>
-                    </header>
 
+
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># The performance of the models trained on L95 and tested on Dev set</h4>
+                    </header>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
                             <thead>
                                 <tr>
                                     <th class="text-center align-middle">Model</th>
-                                    <th class="text-center align-middle">Publications</th>
-                                    <th class="text-center align-middle"># Params</th>
-                                    <th class="text-center align-middle">Code</th>
-                                    <th class="text-center align-middle">EER(%)</th>
-                                    <th class="text-center align-middle">Min-DCF</th>
+                                    <th class="text-center align-middle">Set</th>
+                                    <th class="text-center align-middle">WER</th>
+                                    <th class="text-center align-middle">OCR(U/B/R)</th>
+                                    <th class="text-center align-middle">R1(U/B/R)</th>
+                                    <th class="text-center align-middle">Keyword(U/B/R)</th>
                                 </tr>
                             </thead>
                             <tbody class="text-center align-middle">
                                 <tr>
-                                    <td>ERes2Net-Large</td>
-                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
-                                    <td>18.3M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>11.01</td>
-                                    <td>0.811</td>
+                                    <td>Baseline CTC/AED</td>
+                                    <td>L95</td>
+                                    <td>14.03</td>
+                                    <td>14.76/11.02/90.04</td>
+                                    <td>12.66/100/0.00</td>
+                                    <td>13.86/16.31/83.69</td>
                                 </tr>
                                 <tr>
-                                    <td>ERes2Net-Base</td>
-                                    <td><a href="https://arxiv.org/pdf/2305.12838.pdf">Chen et al. 23'</a></td>
-                                    <td>4.6M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>12.76</td>
-                                    <td>0.871</td>
+                                    <td>Contextualized CTC/AED w/o K</td>
+                                    <td>L95</td>
+                                    <td>14.05</td>
+                                    <td>14.67/11.47/89.56</td>
+                                    <td>12.95/83.31/16.82</td>
+                                    <td>13.81/17.23/82.83</td>
                                 </tr>
                                 <tr>
-                                    <td>CAM++</td>
-                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
-                                    <td>7.2M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>13.4</td>
-                                    <td>0.886</td>
-                                </tr>
-                                <tr>
-                                    <td>ECAPA-TDNN</td>
-                                    <td><a href="https://arxiv.org/pdf/2005.07143.pdf">Desplanques et al. 20'</a></td>
-                                    <td>20.8M</td>
-                                    <td><a href="https://github.com/speechbrain/speechbrain" class="text-info">Code
-                                            Implementation</a></td>
-                                    <td>14.52</td>
-                                    <td>0.913</td>
+                                    <td>Contextualized CTC/AED w K</td>
+                                    <td>L95</td>
+                                    <td>13.65</td>
+                                    <td>14.60/ 9.72/91.24</td>
+                                    <td>12.71/72.59/27.54</td>
+                                    <td>13.73/12.58/87.55</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
                     <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h4># The performance of the models trained on L95 and tested on Test set</h4>
+                    </header>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center align-middle">Model</th>
+                                    <th class="text-center align-middle">Set</th>
+                                    <th class="text-center align-middle">WER</th>
+                                    <th class="text-center align-middle">OCR(U/B/R)</th>
+                                    <th class="text-center align-middle">R1(U/B/R)</th>
+                                    <th class="text-center align-middle">Keyword(U/B/R)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center align-middle">
+                                <tr>
+                                    <td>Baseline CTC/AED</td>
+                                    <td>L95</td>
+                                    <td>14.18</td>
+                                    <td>15.07/10.54/90.35</td>
+                                    <td>12.97/100/0.00</td>
+                                    <td>14.20/13.87/86.22</td>
+                                </tr>
+                                <tr>
+                                    <td>Contextualized CTC/AED w/o K</td>
+                                    <td>L95</td>
+                                    <td>13.99</td>
+                                    <td>14.89/10.37/90.51</td>
+                                    <td>13.09/78.10/22.16</td>
+                                    <td>14.05/13.29/86.84</td>
+                                </tr>
+                                <tr>
+                                    <td>Contextualized CTC/AED w K</td>
+                                    <td>L95</td>
+                                    <td>13.73</td>
+                                    <td>14.88/ 9.045/91.85</td>
+                                    <td>12.98/67.01/33.42</td>
+                                    <td>14.04/ 9.39/90.73</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <!-- <header class="heading flex flex-wrap justify-content-between align-items-center">
                         <h4># Self-Supervised Models</h4>
                     </header>
 
@@ -475,35 +514,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> -->
 
-                    <header class="heading flex flex-wrap justify-content-between align-items-center">
-                        <h4># Language Identification</h4>
-                    </header>
-
-                    <div class="table-responsive">
-                        <table class="table table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th class="text-center align-middle">Model</th>
-                                    <th class="text-center align-middle">Publications</th>
-                                    <th class="text-center align-middle"># Params</th>
-                                    <th class="text-center align-middle">Code</th>
-                                    <th class="text-center align-middle">Accuracy(%)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-center align-middle">
-                                <tr>
-                                    <td>CAM++</td>
-                                    <td><a href="https://arxiv.org/pdf/2303.00332.pdf">Wang et al. 23'</a></td>
-                                    <td>7.2M</td>
-                                    <td><a href="https://github.com/alibaba-damo-academy/3D-Speaker"
-                                            class="text-info">Code Implementation</a></td>
-                                    <td>29.36</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
 
                 </div>
             </div>
