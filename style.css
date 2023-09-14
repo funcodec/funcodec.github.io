@@ -11,6 +11,10 @@ img {
     vertical-align: baseline;
 }
 
+audio {
+    width: 180px;
+}
+
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
@@ -333,7 +337,7 @@ a:hover, a:active {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-content {
-    background: url("images/SlideSpeech_bg.jpg") no-repeat center;
+    background: url("images/bg.png") no-repeat center;
     background-size: cover;
 }
 
