@@ -1,2 +1,2 @@
-# slidespeech.github.io
-This is the home page for **SlideSpeech-Datasets**
+# funcodec.github.io
+This is the home page for **FunCodec**
